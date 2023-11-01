@@ -1,0 +1,19 @@
+.outline
+{
+    margin: 20px;
+padding: 10px;
+border: 10px solid red;
+outline: 10px solid green;
+outline-offset: 14px;
+}
+.outline2
+{
+    border: 12px solid red;
+    outline: 13px solid green;
+    outline-offset: 5px;
+
+}
+.k
+{
+    color: aqua;
+}

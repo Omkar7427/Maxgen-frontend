@@ -1,0 +1,14 @@
+.border
+{
+    border: 2px solid red;
+}
+.border2
+{
+    border: 10px dotted blue;
+    border-radius: 50px;
+}
+h1
+{
+    margin: 10px;
+    border-bottom-style:  solid ;
+}

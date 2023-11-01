@@ -1,0 +1,44 @@
+body
+{
+background-color: gray;
+}
+.row
+{
+
+    
+}
+.col-8,.col-4
+{
+
+}
+#a
+{
+
+    background-color: coral;
+    padding: 17px ;
+
+}
+#b
+{
+background-color: rgb(200, 199, 199);
+text-decoration: none;
+}
+#c
+{
+   background-color: white;
+
+}
+#d
+{
+    background-color: rgb(137, 234, 234);
+}
+#e
+{
+    background-color: burlywood;
+}
+#b ul{
+    list-style: none;
+}
+#b ul li{
+    display: inline-block;
+}

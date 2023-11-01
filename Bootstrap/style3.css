@@ -1,0 +1,42 @@
+.container {
+    /* border: 2px solid black; */
+}
+
+.row {
+    /* border: 2px solid red; */
+}
+
+body {
+    background-color: grey;
+}
+
+#nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+}
+#desc
+{
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    background-color: orange;
+}
+
+#nav {
+    background-color: pink;
+    height: 28px;
+}
+
+#nav2 {
+    background-color: aqua;
+}
+
+#footer {
+    background-color: orange;
+}

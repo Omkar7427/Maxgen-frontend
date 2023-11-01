@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header p.para {
+    background-color: #F7F7F7;
+    text-align: center;
+    font-weight: 500;
+    line-height: 15px;
+    padding: 8px 0px;
+    margin: 0;
+}
+
+.header .row {
+    height: 120px;
+    background-color: white;
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+.row a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.content .cont1 {
+    background-image: url("./Sydneypage/banner1.png");
+    height: 570px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .cont1 h2 {
+    color: white;
+    text-align: center;
+    font-size: 78px;
+    font-weight: 400;
+    line-height: 86px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content .cont1 span {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content .cont1 button {
+    width: 180px;
+    height: 51px;
+    background-color: black;
+    color: white;
+}
+
+.content .cont1 button:hover {
+    background-color: gray;
+}
+
+.cont2 {
+    height: 154px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    padding: 45px 60px;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.cont2 span {
+    color: #CDA866;
+}
+
+/* 667 630 */
+.newcollection .heading {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.newcollection .heading h2 {
+    font-size: 42px;
+    padding: 20px;
+}
+
+.newcollection .img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    row-gap: 60px;
+}
+
+.newcollection .img img {
+    width: 667px;
+    height: 630px;
+    margin: 0 40px;
+}
+
+.newcollection .img img:hover {
+    opacity: 0.6;
+}
+
+.img .imge {
+    position: relative;
+}
+
+.img .imge h2 {
+    position: absolute;
+    bottom: 110px;
+    left: 100px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.img .imge a {
+    position: absolute;
+    color: white;
+    bottom: 70px;
+    left: 100px;
+
+}
+
+.newarrivals .newarr {
+    padding: 70px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newarrivals h2 {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.newarrivals a {
+    color: black;
+}
+
+.newarrivals .img {
+    width: auto;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 120px;
+    column-gap: 30px;
+    position: relative;
+}
+
+.newarrivals .img img {
+    width: 405px;
+    height: 480px;
+}
+
+.newarrivals .img p#shirt1 {
+    position: absolute;
+    bottom: 0px;
+}
+
+.newarrivals .img p#shirt2 {
+    position: absolute;
+    bottom: 0px;
+    left: 435px;
+}
+
+.newarrivals .img p#shirt3 {
+    position: absolute;
+    bottom: 0px;
+    left: 870px;
+}
+
+.luxury-knitwear {
+    margin: 60px 75px 88px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lux h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42px;
+    font-weight: 400;
+
+}
+
+.lux p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.lux a {
+    display: block;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* 243 292 */
+.lux img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.essentials {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+/* 274 */
+.essentials img {
+    height: 566px;
+
+}
+
+.essentials h2 {
+    color: white;
+    font-size: 52px;
+    font-family: 'Inria Serif', serif;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+.essentials a#a1 {
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    bottom: 90px;
+    left: 45%;
+}
+
+.essentials a#a2 {
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    bottom: 90px;
+    right: 42%;
+}
+
+.about {
+    padding: 100px 32px;
+
+}
+
+.about span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.about p {
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Inria Serif', serif;
+    line-height: 50px;
+}
+
+.journal {}
+
+.journal h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42px;
+
+}
+
+.journal span {
+    display: block;
+    text-align: center;
+}
+
+.card-group .card {
+    margin: 30px;
+}
+
+.card .card-text {
+    font-size: 32px;
+    font-family: 'Inria Serif', serif;
+    line-height: 40px;
+}
+
+.hero {
+    margin: 90px 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 25%;
+    font-size: 72px;
+    font-family: 'Inria Serif', serif;
+    color: white;
+
+}
+
+.hero p {
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.hero button {
+    position: absolute;
+    top: 70%;
+    width: 180px;
+    height: 51px;
+    color: white;
+    background-color: black;
+}
+
+.styled_by_you {
+    display: flex;
+    flex-direction: column;
+}
+
+.styled_by_you .heading {
+    text-align: center;
+    font-family: 'Inria Serif', serif;
+    font-weight: 500;
+    margin: 40px;
+}
+
+.heading h2 {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+/* 506 218 */
+.imges img {
+    width: 375px;
+    height: 358px;
+}
+
+.bottom .img1 {
+    display: inline-block;
+    width: 503px;
+    height: 218px;
+    text-align: center;
+    margin: 40px 0;
+
+}
+
+.bottom .img2 {
+    display: inline-block;
+    width: 503px;
+    height: 218px;
+    text-align: center;
+
+}
+
+.bottom .img3 {
+    display: inline-block;
+    width: 503px;
+    height: 218px;
+    text-align: center;
+}
+
+.free {
+    height: 48px;
+    width: 48px;
+    margin: 30px 0;
+}
+
+/* 956 594 */
+.footer {
+    height: 594px;
+}
+
+.footer .footer1 {
+    display: grid;
+    grid-template-columns: repeat(4, 354px);
+    grid-template-rows: 428px;
+    background-color: rgb(56, 54, 52);
+    color: white;
+    padding: 25px 0;
+
+}
+
+.footer .footer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer1 ul li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+
+.footer1 ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.newsletter {
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+
+.newsletter textarea {
+    margin: 40px 0;
+}
+
+.newsletter .imges {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+
+.newsletter img {
+    margin: 16px;
+    height: 20px;
+    width: 20px;
+}
+hr{
+    margin: 0;
+}
+.footer2 .card {
+    display: flex;
+    height: 21px;
+    width: 21px;
+    flex-direction: row;
+
+}
+.footer .card{
+
+}

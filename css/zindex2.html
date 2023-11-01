@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 500px;
+            border: 2px solid black;
+        }
+
+        .black-box {
+            height: 100px;
+            background-color: green;
+            position: relative;
+            top: 10px;
+            left: 50px;
+            z-index: -2;
+        }
+        .grey-box
+        {
+            height: 200px;
+            background-color: grey;
+            position: absolute;
+            top: 12px;
+            z-index: -1;
+
+
+        }
+        .yellow-box 
+        {
+            height: 100px;
+            background-color: yellow;
+            position: relative;
+            top: 40px;
+            left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>z-index example</h1>
+    <h3>An element with greater stack order is always above an element with a lower stack order.
+        <div class="container">
+            <div class="black-box">This is black box</div>
+            <div class="grey-box">this is grey box</div>
+            <div class="yellow-box">this is yellow box</div>
+        </div>
+</body>
+
+</html>

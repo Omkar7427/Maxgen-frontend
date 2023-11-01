@@ -1,0 +1,10 @@
+.border
+{
+    border-style: dotted;
+    border-width: thick;
+}
+.border2
+{
+border-width: 10px 2px ;
+border-style: dotted;
+}

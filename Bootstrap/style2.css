@@ -1,0 +1,34 @@
+*
+
+#name
+{
+    background-color: burlywood;
+    padding: 10px;
+    
+}
+#Table
+{
+    background-color: chartreuse;
+    padding: 30px;
+    
+}
+#info
+{
+    background-color: darkgray;
+    padd: 10px;
+    
+}
+#des
+{
+    background-color: aqua;
+}
+#end
+{
+    background-color: hotpink;
+}
+table,td,th
+{
+    border: 5px solid blue;
+    text-align: center;
+    font-size: 25px;
+}

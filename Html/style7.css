@@ -1,0 +1,12 @@
+.city
+{
+    background-color: aqua;
+    padding: 30px;
+text-align: center;
+}
+.cities
+{
+    background-color: tomato;
+    color: white;
+    padding: 25px;
+}

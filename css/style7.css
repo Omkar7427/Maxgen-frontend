@@ -1,0 +1,16 @@
+
+p.display
+{
+    visibility: hidden;
+}
+li{
+    display: inline-block;
+}
+span
+{
+    display: block;
+}
+a
+{
+display: block;
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-image: url(images/image-1.jpg);
+    color: white;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: bottom;
+}
+
+.header h2 {
+    padding: 30px 0;
+}
+
+.header h1 {
+    padding: 10px 0px 30px 0;
+}
+
+a.btn {
+    background-color: rgb(0, 255, 255);
+    padding: 15px 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+
+a.btn:hover {
+    opacity: 1;
+}
+
+.header .line {
+    height: 8px;
+    width: 200px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.card-img-top {
+    height: 400px;
+    width: 300px;
+}
+
+.content {
+    padding: 50px 0;
+}
+
+.cont1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cont1 h1 {
+    text-align: center;
+    color: aqua;
+
+}
+
+.cont1 .line {
+    margin: 20px 0;
+    height: 8px;
+    width: 200px;
+    background-color: aqua;
+    border-radius: 10px;
+
+}
+
+.cont2 {
+    padding: 40px 60px 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont2-1,
+.cont2-2 {
+    padding: 30px;
+}
+.imgg{
+    height: 340px;
+    width: 330px;
+}
+
+.img1 {
+    height: 300px;
+    width: 300px;
+}
+
+.img2 {
+    height: 300px;
+    width: 300px;
+
+}
+
+.cont2-1,
+.cont2-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont2-1 h5,
+.cont2-2 h5 {
+    padding-bottom: 20px;
+    color: aqua;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.btn1,
+a.btn2 {
+    background-color: rgb(0, 255, 255);
+    margin: 30px 0;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+a.btn1:hover {
+    opacity: 1;
+}
+
+a.btn2:hover {
+    opacity: 1;
+}
+
+.img1:hover {
+    height: 320px;
+    width: 310px;
+}
+
+.img2:hover {
+    height: 320px;
+    width: 310px;
+}
+
+.footer {
+    height: 200px;
+    background-color: aqua;
+    color: white;
+    text-align: center;
+}
+.footer p{
+    padding: 20px 20px;
+}
