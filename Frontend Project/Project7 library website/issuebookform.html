@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>issueBookform</title>
+<link rel="stylesheet"  href="issuebookform.css">
+</head>
+<body>
+<div class="login-page">
+	<div class="form">
+		<div class="login">
+			<div class="login-header">
+				<h2> <b> Fill this form to issue book</b> </h2> 
+				
+			</div>
+		</div>
+			<form class="login-form" action="Home.html">
+				<label> your name:</label>
+				<input type="text" id="name" placeholder="enter name" required/> 
+				<label> count of books:</label>
+				<input type="number" placeholder="Enter issue books count" required/>
+				<label> city:</label>
+				<select id="city" required>
+				<option value="t">Selected </option>
+				<option value="t">Thane </option>
+				<option value="m">Mumbai </option>
+				<option value="b"> bandra </option>
+				</select>
+				<label> start date</label>
+				<input type="date" name="startDate" min="2022-02-17"  required/>
+				<label> end date</label>
+				<input type="date" name="endDate">
+				<button onclick="showAlert()">  issueBook </button>  
+			</form>
+	</div>
+</div>
+</body>
+
+<script>
+  function showAlert() {
+    alert ("Book issued successfully");
+  }
+  
+  </script>
+</html>

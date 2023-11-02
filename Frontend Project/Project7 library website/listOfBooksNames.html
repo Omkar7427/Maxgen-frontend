@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>List of books names</title>
+<link rel="stylesheet"  href="listOfBooksNames.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<ul class="nav-area">
+<li><a href="Home.html">Home</a></li>
+<li><a href="">Contact Us</a></li>	
+<li><a href="index.html">Categories</a></li>
+<li><a href="listOfBooksNames.html">SerachBooks</a></li>
+<li><a href="">Logout</a></li>
+</ul>
+
+<div class="title">	
+	<h1> <b>  List of Book names  </b>
+     <input type="search"    class="input" id="myInput"  onkeyup="searchList()" placeholder="Search list of books here.." name="search">
+      <button type="submit"  ><i class="fa fa-search"></i></button> </h1>
+</div>
+
+<table  id="books"> 
+	<tr>
+	<th> BookName: </th>
+	<th> Author:   </th>
+	<th>Published On: </th>
+	<th> status: </th>
+	<th> IssueBook: </th>
+	</tr>
+	<tr>
+		<td> Moby-Dick </td>
+		<td> Herman Menville </td>
+		<td> 15/02/2011    </td>
+		<td> Avaiable      </td>
+		<td> <input type="checkbox"  onclick="show()" name="issuebook" class="checkbox"> </td> 
+	</tr>	
+	<tr>
+		<td> The call of wild </td>
+		<td> Jack London </td>
+		<td> 15/02/2020    </td>
+		<td> Available      </td>
+		<td> <input  type="checkbox"  onclick="show()"  name="issuebook"  class="checkbox"> </td> 
+	</tr>
+	<tr>
+		<td> Oddyssey </td>
+		<td> Homer </td>
+		<td> 5/01/2015    </td>
+		<td> Unavailable      </td>
+		<td>  			</td> 
+	</tr>	
+	<tr>
+		<td> Into the Wild</td>
+		<td> Jon Krakauer </td>
+		<td> 25/11/2010    </td>
+		<td> Available      </td>
+		<td>  <input type="checkbox"   onclick="show()" name="issuebook"  class="checkbox"> </td> 
+	</tr>	
+		
+		<tr>
+		<td> Treasure Island</td>
+		<td> Robert Louis Stevenson </td>
+		<td> 15/11/2012    </td>
+		<td> Available      </td>
+		<td>  <input type="checkbox"  onclick="show()" name="issuebook"  class="checkbox"> </td> 
+	</tr>
+	<tr>
+		<td> The Hobbit</td>
+		<td> J. R. R. Tolkien </td>
+		<td> 5/1/2015   </td>
+		<td> Available      </td>
+		<td>  <input type="checkbox"  onclick="show()" name="issuebook"  class="checkbox"> </td> 
+	</tr>
+	<tr>
+		<td> Into Thin Air</td>
+		<td> Jon Krakauer </td>
+		<td> 25/11/2014  </td>
+		<td> Available      </td>
+		<td>  <input type="checkbox"  onclick="show()"  name="issuebook"  class="checkbox"> </td> 
+	</tr>
+		
+		
+</table>  <br> <br>
+<a href="issuebookform.html"> <button id ="btn"  >issue book</button> </a>
+
+
+
+
+
+</body>
+
+<script>
+  
+  function searchList()  {
+	  var input, filter , table ,tr,td ,i ,txtValue;
+	  input = document.getElementById("myInput");
+	  filter = input.value.toUpperCase();
+	  table = document.getElementById("books");
+	  tr = table.getElementsByTagName("tr");
+	  for(i =0; i <tr.length;i++)  {
+		  td =tr[i].getElementsByTagName("td")[0];
+		  if(td)  {
+			  txtValue = td.txtContent  || td.innerText;
+			  if(txtValue.toUpperCase().indexOf(filter) > -1 )  {
+				  tr[i].style.display = " ";
+				  }  else {
+					  tr[i].style.display ="none";
+				  }
+			  }
+	  }
+}
+  
+  function show() {
+	  var x = document.getElementById("btn");
+	  if(x.style.display === "none"){
+		  x.style.display = "block";
+	  }
+	  else {
+		  x.style.display ="block";
+	  }
+}
+  
+  
+  </script>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <style>
+    * body {
+      background: url(background.jpg) no-repeat top center;
+      background-size: cover;
+      height: 100vh;
+    }
+
+      {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .nav-area {
+      float: right;
+      list-style: none;
+      margin-top: 30px;
+    }
+
+    .nav-area li {
+      display: inline-block;
+    }
+
+    .nav-area li a {
+      color: #2f4f4f;
+      text-decoration: none;
+      padding: 5px 20px;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .nav-area li a:hover {
+      background: #8fbc8f;
+      color: #556b2f;
+    }
+
+    .header {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #2f4f4f;
+    }
+
+    .header2 {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #2f4f4f;
+    }
+
+
+    @media only screen and (min-width: 900px) {
+      .container {
+        max-width: 1000px;
+        padding: 60px;
+      }
+
+      .header {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .header h1 {
+        font-size: 30px;
+
+      }
+
+      .header2 {
+        flex-direction: row;
+        justify-content: space-between;
+
+
+
+      }
+
+      .header2 h1 {
+        font-size: 30px;
+
+      }
+
+    }
+
+
+    .gallery {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-top: 30px;
+      grid-gap: 5px;
+    }
+
+    .item {
+      margin-left: 20px;
+      width: 200px;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+
+    }
+
+    .item h3 {
+      width: 100%;
+      padding: 20px;
+      position: absolute;
+      background-color: #00000040;
+      color: aliceblue;
+      bottom: -70px;
+      font-weight: 300;
+      transition: 0.5s ease-in-out bottom;
+    }
+
+    @media (max-width:600px) {
+
+      .nav-area {
+        float: none;
+        margin-top: 0;
+      }
+
+      .nav-area li a {
+        padding: 5px;
+        font-size: 11px;
+      }
+
+      .nav-area {
+        text-align: center;
+      }
+
+    }
+
+    .category {
+
+      font: sans-serif;
+      font-size: 20px;
+      color: #556b2f;
+    }
+
+    .category td:hover {
+      background: #8fbc8f;
+      color: #556b2f;
+    }
+
+    .btn {
+      background: #2f4f4f;
+      text-align: center;
+      padding: 10px;
+      border-radius: 7px;
+      color: #fff;
+      cursor: pointer;
+      text-transform: uppercase;
+      margin-align: top;
+      float: right;
+    }
+
+    .img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <ul class="nav-area">
+
+      <li><a href="">Home</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Logout</a></li>
+    </ul>
+  </header>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>
+        <a><span>Top Rated Books</span></a>
+      </h1>
+    </div>
+
+    <table>
+      <tr>
+        <td>
+          <img src="hobbit.jpg" style="width:80%" height="40%">
+        </td>
+        <td>
+          <img src="hamlet.jpg" style="width:80%" height="40%">
+        </td>
+        <td>
+          <img src="odyssey.jpeg" style="width:80%" height="40%">
+        </td>
+        <td>
+          <img src="img3.jpg" style="width:80%" height="40%">
+        </td>
+        <td>
+          <img src="img7.jpg" style="width:80%" height="40%">
+        </td>
+      </tr>
+    </table>
+
+    <div class="header2">
+      <h1>
+        <a><span>Latest Arrivals</span></a>
+      </h1>
+    </div>
+
+    <table>
+      <tr>
+        <td>
+          <img src=img1.jpg style="width:80%">
+        </td>
+        <td>
+          <img src="img7.jpg" style="width:80%">
+        </td>
+        <td>
+          <img src="img4.jpg" style="width:80%">
+        </td>
+        <td>
+          <img src="img3.jpg" style="width:80%">
+        </td>
+        <td>
+          <img src="img6.jpg" style="width:80%">
+        </td>
+      </tr>
+    </table>
+
+    <div class="header2">
+      <h1>
+        <a><span>Categories</span></a>
+      </h1>
+    </div>
+    <br />
+    <table class="category" align="center" width="100%">
+      <tr>
+        <td>Action and adventure</td>
+        <td> Comic books</td>
+        <td> Science</td>
+        <td> Drama</td>
+        <td> Fairytale</td>
+        <td> Fantasy</td>
+        <td> Suspense</td>
+        <td>Thriller</td>
+      </tr>
+
+    </table>
+    <a href="index.html"> <input class="btn" type="submit" value="View All" /> </a>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<script type="text/javascript">
+function validate() {
+	var fname = document.getElementById("fname").value;
+	var fmail = document.getElementById("fmail").value;
+	var subj = document.getElementById("sub").value;
+
+	if(fname==null || fname=="") {
+	alert("Name can't be blank");
+	return false;
+	}
+	if(!isNaN(sname)) {
+	alert("Name can't be numerical");
+	return false;
+	}
+	else if(fmail==null || fmail=="") {
+	alert("Mail can't be blank");
+	return false;
+	}
+	else if(!isNaN(fmail)) {
+	alert(" Mail can't be numerical");
+	return false;
+	}
+	else if(subj==null || subj=="") {
+	alert("Message can't be blank");
+	return false;
+	}
+	else if(!isNaN(subj)) {
+		alert(" Message can't be numerical");
+		return false;
+		}
+	return true;
+	}
+
+
+
+</script>
+<style type="text/css">
+  *
+
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'sans-serif', sans-serif;
+
+}
+.body{
+  background: url(bg2.jpg) no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+.nav-area {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li {
+    display: inline-block;
+}
+.nav-area li a {
+    color: #2f4f4f;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.nav-area li a:hover {
+    background: #fff;
+    color: #333;
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background: transparent;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.wrapper .title h1{
+  color: 	#2f4f4f;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form{
+  display: flex;
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid 	#2f4f4f;
+  padding: 10px;
+  color: 	#2f4f4f;
+  width: 100%;
+}
+
+
+
+.btn {
+    background: 	#2f4f4f;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}
+
+@media (max-width:600px) {
+   
+    .nav-area {
+        float: none;
+        margin-top: 0;
+    }
+    .nav-area li a {
+        padding: 5px;
+        font-size: 11px;
+    }
+    .nav-area {
+        text-align: center;
+    }
+    
+}
+
+</style>
+</head>
+<body>
+<ul class="nav-area">
+         <li><a href="Home.html">Home</a></li>
+            <li><a href="">About Us</a></li>
+         <li><a href="">LogOut</a></li>
+</ul>
+
+<div class="wrapper">
+    
+
+  <div class="title">
+    <h1>Contact Us</h1>
+  </div>
+  <div class="contact-form" >
+      <form class="input-fields" onsubmit="return validate()"> 
+      First Name:<input type="text" name="Name" id="fname" class="input"><br>
+      Email:<input type="email" name="Email" id="fmail" class="input"><br>
+      Message:<input type="text" name="Message" id="sub" class="input"><br>
+      <input class="btn" type="submit" value="Submit"/> 
+     
+      
+      
+      
+      </form>
+        </div>
+	</div>
+</body>
+</html>

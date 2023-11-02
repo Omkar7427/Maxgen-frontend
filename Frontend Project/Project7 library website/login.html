@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login page</title>
+<link rel="stylesheet"  href="Loginpage.css">
+
+</head>
+<body>
+<div class="login-page">
+	<div class="form">
+		<div class="login">
+			<div class="login-header">
+				<h2> <b> Open Source Library </b> </h2> 
+					<p> <b> Login here...</b> </p>
+			</div>
+		</div>
+			<form class="login-form" action="Home.html" onsubmit="return myFunction()">
+				<input type="text" id="name" placeholder="enter username"> 
+				<input type="password"  id="password" placeholder="enter password">
+				<button >    login  </button> 
+			</form>
+	</div>
+</div>
+</body>
+
+<script>
+	function myFunction() {
+		var name =  document.getElementById("name").value;
+		var pass =  document.getElementById("password").value;
+		
+		
+			
+		if(name==null || name=="") {
+				alert("name can't be blank");
+				return false;
+			}	
+		else if(!isNaN(name)){
+			alert("number is not allowed");
+			return false;
+		}
+			else if(pass==null || pass=="") {
+				alert("password can't be blank");
+				return false;
+			}
+			else if(pass.length < 6)  {
+				alert("password length must be grater than 6");
+				return false;
+			}
+			else if( (name == "ankita123")  && (pass =="pass123") ) {
+			alert("login successfully");
+			return true;
+			}
+			else {
+				alert("wrong username and password");
+				return false;
+			}
+			
+	}
+</script>
+
+</html>
