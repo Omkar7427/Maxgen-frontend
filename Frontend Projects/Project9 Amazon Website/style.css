@@ -111,29 +111,135 @@
 .nav-cart i {
     font-size: 30px;
 }
+
 /* Panel */
-.panel{
-  height: 40px;
-  background-color: #121d36;  
-  display: flex;
-  align-items: center;
-  color: white;
-  justify-content: space-evenly;
+.panel {
+    height: 40px;
+    background-color: #121d36;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
 }
-.panel-ops{
+
+.panel-ops {
     width: 70%;
 }
-.ops-list{
-    list-style: none;;
+
+.ops-list {
+    list-style: none;
+    ;
 }
-.ops-list a{
+
+.ops-list a {
     text-decoration: none;
     color: white;
     margin-left: 15px;
 }
-.panel-deal{
+
+.panel-deal {
     text-align: right;
     font-size: 0.9rem;
     font-weight: 700;
 }
+
 /* Hero */
+.hero-section {
+    background-image: url(images/hero_image.jpg);
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero-msg {
+    padding: 10px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    width: 75%;
+    margin-bottom: 25px;
+}
+
+.hero-msg a {
+    color: rgb(0, 83, 128);
+    text-decoration: none;
+}
+
+/* Shop Section*/
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(207, 207, 207);
+    justify-content: space-evenly;
+    margin: 20px 0 10px 0;
+
+}
+
+.box {
+    width: 23%;
+    height: 400px;
+    background-color: white;
+}
+
+.box-img {
+    height: 300px;
+    background-size: cover;
+}
+
+.box h2 {
+    margin: 20px 0px;
+}
+
+.box a {
+    text-decoration: none;
+    display: block;
+    margin: 10px 20px;
+}
+
+/* Footer */
+.footer-top {
+    height: 70px;
+    background-color: rgb(49, 82, 132);
+    text-align: center;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-mid {
+    display: flex;
+    background-color: rgb(14, 47, 90);
+    color: white;
+    justify-content: space-evenly;
+    padding: 10px 0 40px 0;
+}
+
+.midinfo h3 {
+    padding: 40px 0 10px 0;
+}
+
+.midinfo p {
+    padding: 10px 0;
+}
+
+.footer-lang {
+    display: flex;
+    background-color: rgb(14, 47, 90);
+    height: 60px;
+
+}
+
+.footer-logo {
+    height: 150px;
+    background-color: rgb(14, 47, 90);
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-logo img {
+    background-size: cover;
+    background-color: rgb(14, 47, 90);
+    padding: 20px 0 0 0;
+}
