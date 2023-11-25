@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.interior {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(interior\ background.avif);
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+}
+
+.logo {
+    width: 450px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: 220px;
+}
+
+.rooms {
+    width: 70%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.rooms a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.rooms li {
+    list-style: none;
+}
+
+/* Content Box */
+.content {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(205, 81, 15)
+}
+
+.content p {
+    color: rgb(207, 233, 234);
+    padding: 20px;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 10px;
+    color: rgb(3, 72, 109);
+    background: transparent;
+    border: 2px solid aqua;
+    height: 30px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: rgb(44, 221, 68);
+}
