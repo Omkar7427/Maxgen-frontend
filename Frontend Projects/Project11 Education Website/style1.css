@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.nav1 {
+    display: flex;
+}
+
+.logo {
+    width: 50%;
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 70px;
+    color: white;
+}
+
+#pic {
+    color: red;
+    font-size: 2rem;
+    padding: 5px 10px;
+}
+
+.nav-info {
+    height: 70px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-info ul {
+    display: inline;
+}
+
+.nav-info li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.nav-info li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-info li:hover::after {
+    width: 100%;
+}
+
+.nav-info li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-frontpage {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.frontpage-h1 {
+    font-size: 3.5rem;
+    padding: 20px 0;
+    width: 80%;
+    text-align: center;
+}
+
+/* ---university--- */
+.largestuniv {
+    margin: 120px 0;
+}
+
+.largestuniv h2 {
+    float: left;
+}
+
+.largestuniv p {
+    float: left;
+}
+
+.largestuniv img {
+    width: 400px;
+    height: 300px;
+}
+/* ---footer--- */
+.aboutus{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutus h2{
+    margin: 20px 0;
+    font-weight: 500;
+}
+.aboutus-icon{
+    margin:20px 0 ;
+}
+.fa-brands{
+    color: #f44336;
+    padding: 0 10px;
+}
+.fa-regular{
+    color: #f44336;
+}
